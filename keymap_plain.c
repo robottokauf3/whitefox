@@ -34,7 +34,7 @@ const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         ESC, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, BSPC,BSPC,GRV, \
         TAB, Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,   LBRC,RBRC,BSLS,     DEL, \
         FN0, A,   S,   D,   F,   G,   H,   J,   K,   L,   SCLN,QUOT,NUHS,ENT,      PGUP,\
-        LSFT,NUBS,Z,   X,   C,   V,   B,   N,   M,   COMM,DOT, SLSH,RSFT,     UP,  PGDN,\
+        LSFT,NUBS,Z,   X,   C,   V,   B,   N,   M,   COMM,DOT, SLSH,RSFT,    FN1,  FN0, \
         LCTL,LALT,LGUI,               SPC,                RGUI,RALT,LEFT,DOWN,UP,  RGHT \
     ),
     [1] = KEYMAP( \
@@ -42,10 +42,18 @@ const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     TRNS,\
         TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,LEFT,DOWN,UP  ,RGHT,TRNS,TRNS,TRNS,TRNS,     TRNS,\
         TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     TRNS,TRNS,\
-        TRNS,TRNS,TRNS,               TRNS,          TRNS,TRNS,HOME,     PGDN,PGUP,END  \
+        TRNS,TRNS,TRNS,               TRNS,               TRNS,TRNS,HOME,PGDN,PGUP,END  \
     ),
+    [2] = KEYMAP( \
+                 TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,MPRV,MPLY,MNXT,MUTE,VOLD,VOLU,TRNS,TRNS,TRNS,\
+                 TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     TRNS,\
+                 TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     TRNS,\
+                 TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     TRNS,TRNS,\
+                 TRNS,TRNS,TRNS,               TRNS,              TRNS,TRNS,TRNS,TRNS,TRNS,TRNS  \
+                  ),
 };
 
 const uint16_t fn_actions[] = {
     [0] = ACTION_LAYER_MOMENTARY(1),
+    [1] = ACTION_LAYER_MOMENTARY(2),
 };
