@@ -14,7 +14,10 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
+
 #include "keymap_common.h"
+#include "led_controller.h"
+
 
 const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* Layer 0: Default Layer
@@ -45,7 +48,7 @@ const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         TRNS,TRNS,TRNS,               TRNS,               TRNS,TRNS,HOME,PGDN,PGUP,END  \
     ),
     [2] = KEYMAP( \
-                 TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,MUTE,VOLD,VOLU,TRNS,TRNS,TRNS,\
+                 TRNS,TRNS,TRNS,TRNS,TRNS,SLCK,PAUS,TRNS,TRNS,TRNS,MUTE,VOLD,VOLU,TRNS,TRNS,TRNS,\
                  TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,MPLY,MPRV,MNXT,TRNS,     TRNS,\
                  TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     TRNS,\
                  TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     TRNS,TRNS,\
